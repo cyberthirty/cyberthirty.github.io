@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Create home lab for pentesting </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">HOME</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="icons">
+							<li><a href="https://twitter.com/cyberthirty30" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.linkedin.com/in/cyber30/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/cyberthirty/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Setting up the Home Lab  </h1>
+								</header>
+
+								<!-- Text stuff -->
+									<h2>Introduction</h2>
+									<p>
+								Kali Linux is the most widely used ethical hacking OS. It is a Debian-based Linux - based operating system developed for penetration testing and digital forensics. It is financed and maintained by Offensive Security Ltd. The greatest and most widely used operating system for hackers is Kali Linux. It includes the first Nexus device open-source Android penetration test. The forensic mode is another excellent feature of the Kali Linux operating system. <br></p>
+								<pre>
+<h3>Features:</h3>
+	Testing for penetration is possible. 
+	Both a 32-bit and 64-bit version of this platform is available. 
+	Kali Linux can be updated. 
+	This OS supports complete disc encryption. 
+	The network-based Kali Linux installation can be easily automated and customized.
+	Support for live USB installations. 
+	Forensic work can be done using its forensics mode.
+<h3>System Requirements:</h3> 
+	2 GB of RAM 
+	20 GB of disk space 
+	32- or 64-bit CPU (single-core) with 2 GHz speed or better 
+	High-definition graphics card and monitor 
+	Broadband internet connection
+</pre> 
+							<p>	In this step by step I will show you on how to install and configure Kali Linux in VirtualBox. And I will walk you through the process, ensuring you're ready to explore the powerful tools within this penetration testing distribution.</p>
+							<img src="images/Kali Linux.png" alt="" class="stepimg" />
+	
+							
+							<h3>Step 1: Downloading VirtualBox</h3>
+							<p>If you don't have VirtualBox installed, download it from <a href="https://www.virtualbox.org/">official website VirtualBox</a> and follow the installation wizard.</p>
+							<img src="images/oracleVirtual.png" alt="Download Oracle VirtualBox"  class="stepimg"/>
+							<p>Once installed, launch VirtualBox to create a new virtual machine.</p>
+							<img src="images/VirtualBoxWelcome.png" alt="Launch VirtualBox" class="stepimg"/>
+
+							<h3>Step 2: Downloading Kali Linux</h3>
+							<p>We need to download the Kali Linux ISO from the <a href="https://www.kali.org/downloads/">official website kali</a>. Choose the appropriate version based on your system architecture (32-bit or 64-bit).</p>
+							<img src="images/kalidownload.png" class="stepimg" alt="" />
+
+							<h3>Step 3: Creating a New Virtual Machine</h3>
+							<p>Click on "New" in VirtualBox, and name your virtual machine (e.g., "Kali Linux" and it is okay to use any name, but I simply used Kali Linux). And click on "Next" to continue</p>
+							<img src="images/virtualbox name.png" alt="Name your virtual machine" class="stepimg">
+							<p>Allocate at least 2 GB of RAM for optimal performance and allocate not more than 25% of your system RAM for better practices but I will choose 1 GB of RAM for some reason. The more RAM you give your virtual machine, the better and faster it will be.</p> 
+							<img src="images/ram allocation.png" alt="Memory allocation " class="stepimg" />
+							<img src="images/Create Virtual Machine.png" alt="" class="stepimg">
+							<p>Choose the storage fixed size. Allocate at least 20 GB of space to your virtual hard disk but I recommend using aleast 40 GB of space for flexibility. Then click "Next" to create a new virtual hard disk.</p>
+							<img src="images/virtual hard disk.png" alt="Storage allocation" class="stepimg"/>
+							<p>We get summary display that show all our configuration in nice format. Just press "Finish" to create the virtual machine( We can go back and modify the configuration later). </p>
+							<img src="images/virtualsummary.png" alt="Configuration summary" class="stepimg"/>
+
+							<h3>Step 4: Configuring the Virtual Machine</h3>
+							<p>With your virtual machine selected, click on "Settings." Under the "General" tab, under the "Basics", Select "Linux" as the type and "Debian" as the version because Kali is a Debian-based Linux operating system.</p>
+							<img src="images/debianvirtualbox.png" alt="choose version" class="stepimg"/>
+							<p>On the "General" Under the "Advanced" tab, change both Shared Clipboard and Drag'n Drop from "Disabled" to "Bidirectional" to allow drag n drop or copy and paste from virtual machine to system machine(like copy command from Windows computer and paste in Kali virtual machine).</p>
+							<img src="images/bidirectionalvirtual.png" alt="choose version" class="stepimg"/>		
+							<p>Under the "System" tab, Uncheck the Floppy option above the Optional option in the boot order to avoid booting from Floppy Disk. </p>
+							<img src="images/bootfrom.png" alt="Boot order" class="stepimg" />
+							<p>Under the "Network" tab, select any network that suite with your needs or use default but I choose "CYBER30 NAT Network" that I already created for my home lab to enable virtual machines communate with each other. Then click "OK" to save the configuration.</p>
+							<img src="images/network adapter.png" alt="network adapter" class="stepimg" />
+
+							<h3>Step 5: Installing Kali Linux</h3>
+							<P>Start your virtual machine while your Kali machine selected like below.</P>
+							<img src="images/startkali.png" alt="Start Kali Linux" class="stepimg">
+							<p>The Kali Linux installation wizard will appear then select "Graphical Install"(I suggest using the graphical install for beginners. Use your keyboard keys(UP Arrow to move up and DOWN Arrow to move down) to navigate the menu.)</P>
+							<img src="images/graphuialinstall.png" alt="Select Graphical install" class="stepimg">
+							<p>Select the language that you are most comfortable with then click "Continue" but I will continue with default language.</p>
+							<img src="images/select language.png" alt="Select your language" class="stepimg"> 
+							<p>Select your location or use default location then click "Continue" but I will continue with default location.</p>
+							<img src="images/select location.png" alt="Select location" class="stepimg">
+							<p>Selet keyboard layout that you are most comfortable with and click "Continue" but I will continue with default keyboard.</p>
+							<img src="images/keyword select.png" alt="Select keyboard layout" class="stepimg">
+							<p>Enter your name servers if I have specific name servers then click "contniue" or leave the field blank  if you don't want to use any name servers  </p>
+							<img src="images/name server.png" alt="Name servers" class="stepimg">
+							<p>Enter your full name or use your desired name but I will continue with "CYBER30" instead of my real name.</p>
+							<img src="images/set up user.png" alt="Enter your fullname" class="stepimg">
+							<p>Enter your username or use given reasonable choice by Kali then click "Continue" but I will continue with "CYBER30". </p>
+							<img src="images/set up username.png" alt="Enter your username" class="stepimg">
+							<p>Enter password that you feel more feel and easy to remember but dificult to crack then click "Continue".</p>
+							<img src="images/set up passwd.png" alt="" class="stepimg">
+							<P>Select the timezone that you want to use or it automatically updated from network time protocol(NTP) server if internet connection is available then click "Continue"</P>
+							<img src="images/configure time.png" alt="Select timezone" class="stepimg">
+							<p>When prompted, ask for partition. Choose the "Guided - use entire disk" option for partitioning then click "Continue". “Guided - use entire disk” is the simplest and most common partition scheme, which will allocate an entire disk to Kali Linux and most recommended for beginners.</P>
+							<img src="images/guided  use entire disk.png" class="stepimg" alt="Choose partition" />
+							<p>Choose the "Finish partitioning and write changes to disk" option for saving the partition configuration then click "Continue".</p>
+							<img src="images/finish partitionand write.png" alt="Finish partitioning and saving changes" class="stepimg">
+
+							<h3>Step 6: Completing the Installation</h3>
+							<p>Allow the installation to complete, and when prompted, ask for GRUB Bootloader installation. Select "Yes" to install the GRUB bootloader.</p>
+							<img src="images/grub boot loader.png" alt="Select Yes to install" class="stepimg">
+							<p>Select "dev/sda" which is most recommended for beginners or select manualy to use your desired device for Bootloader then click "Continue".After select device for Bootloader installation then allow to complete installation</p>	
+							<img src="images/grub boot loaders.png" class="stepimg" alt="Install GRUB Bootloader" />
+							<p>Allow the installation to complete. Once finished, restart the virtual machine.</p>
+							<img src="images/finish installation.png" alt="Installation is complete" class="stepimg">
+
+							<h3>Step 7: Configuring Kali Linux</h3>
+							<p>Log in with the credentials you created during the installation.</p>
+							<img src="images/login screen.png" alt=" login with the credentials" class="stepimg">
+							<p> Open a terminal, ping google.com by using this command <code class="greentexted">ping -c 4 google.com</code>(to check if internet connection is available). </p>
+							<img src="images/pinggoogle.png" alt="Ping google.com" class="stepimg">
+							<p>Clean terminal by using <code class="greentexted">clear</code> or using this shortcut <code class="greentexted">CTRL + L</code> then update the system using the following commands: <code class="texted">sudo apt update</code> and upgrade using the following commmand: <code class="texted">sudo apt upgrade -y</code> </p>			
+							<img src="images/apt update.png" class="stepimg" alt="Apt update && apt upgrade" />
+							<h3>Conclusion</h3>
+							<p>Congratulations! You've successfully installed and configured Kali Linux in VirtualBox. Your virtual environment is now ready for ethical hacking and cybersecurity exploration. You can familiarize yourself with basic commands by <a href="linuxbash.html" class="read-btn">CLICK HERE TO READ MORE</a> and the powerful tools within this penetration testing distribution( like Metasploit, Burp Suite, Nmap, Wireshark, Aircrack-ng, et).</p>
+							
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/cyberthirty30" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.linkedin.com/in/cyber30/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/cyberthirty/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; 2023 <a href="https://github.com/cyberthirty/">CYBER30 Inc</a></li></ul>
+					</div>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

