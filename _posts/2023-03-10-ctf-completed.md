@@ -2,7 +2,7 @@
 title: Hands on practical - Capture The Flag challenge completed
 description: Mastering Capture The Flag challenges on TryHackMe, HackTheBox and Home lab - Improve problem solving, practical cybersecurity skills and strategies.
 author: YBK Sniper
-date: 202-03-03 11:33:00 +0200
+date: 2023-03-10 11:33:00 +0200
 categories: [Hacking]
 tags: [tryhackme, ctf]
 math: true
