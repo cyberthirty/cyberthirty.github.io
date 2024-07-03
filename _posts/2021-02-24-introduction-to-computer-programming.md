@@ -2,7 +2,7 @@
 title: Introduction to Computer programming
 description: Learn the basics of programming with Python, including fundamental concepts and practical examples.
 author: YBK Sniper
-date: 202-03-03 11:33:00 +0200
+date: 2021-02-24 11:33:00 +0200
 categories: [Programming]
 tags: [Python, Notes]
 math: true
