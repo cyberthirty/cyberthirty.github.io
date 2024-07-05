@@ -1,6 +1,6 @@
 ---
 
-title: 10 Famous Quotes About Finances & Credit
+title: Top 10 Famous Quotes About Finances
 description: This blog will show you the top 10 famous quotes that offer different perspectives on finances and provide inspiration in managing money wisely.
 author: YBK Sniper
 date: 2022-05-15 11:33:00 +0200
