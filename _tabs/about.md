@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-<p align="center">
+<p>
   <a href="https://tryhackme.com/p/cyber30" target="_blank" style="text-decoration:none;">
     <img src="https://img.shields.io/badge/TryHackMe-%23000000?logo=tryhackme&logoColor=white&style=for-the-badge" alt="TryHackMe"/>
   </a>
