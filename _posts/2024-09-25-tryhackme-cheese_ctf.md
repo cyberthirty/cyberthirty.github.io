@@ -1,5 +1,6 @@
 ---
 title: "TryHackMe: Cheese CTF"
+description: This blog will introduce you guide on creating various types of graphs in Python using the Matplotlib library.
 author: cyberthirty
 categories: [TryHackMe]
 tags: [web, portspoofing, sqli, lfi, rce, ssh, service, timer, suid, sudo]
@@ -12,8 +13,6 @@ image:
 
 Cheese CTF was a straightforward room where we used SQL injection to bypass a login page and discovered an endpoint vulnerable to `LFI`. By utilizing PHP filters chain to turn the `LFI` into `RCE`, we gained a foothold on the machine. After that, we exploited a writable `authorized_keys` file to pivot to another user. As this user, we fixed a syntax error in a timer and used `sudo` privileges to start it, which allowed us to run a service that created a SUID binary. By exploiting this SUID binary, we were able to escalate our privileges to the `root` user.
 
-[![Tryhackme Room Link](room_card.webp){: width="300" height="300" .shadow}](https://tryhackme.com/r/room/cheesectfv10){: .center }
-
 ## Initial Enumeration
 
 ### Nmap Scan
@@ -24,7 +23,6 @@ Scanning for open ports using `nmap` is largely ineffective in this room due to 
 
 By checking the most common ports, we can see that a custom web application is running on port `80`.
 
-![Web 80 Index](web_80_index.webp){: width="1200" height="600" }
 
 ## Shell as www-data
 
@@ -32,15 +30,12 @@ By checking the most common ports, we can see that a custom web application is r
 
 Clicking the login button on the index page redirects us to `/login.php`, where we encounter a login form.
 
-![Web 80 Login](web_80_login.webp){: width="1200" height="600" }
 
 After trying a couple of simple `SQL injection` payloads, we are able to bypass the login using the payload `' || 1=1;-- -` as the username.
 
-![Web 80 Login SQL Injection](web_80_login_sql_injection.webp){: width="1200" height="600" }
 
 After bypassing the login, we are redirected to `http://10.10.184.98/secret-script.php?file=supersecretadminpanel.html`, where the `file` parameter is particularly interesting. Additionally, by checking the other links on the page, we notice the application also uses the PHP filters in the `file` parameter.
 
-![Web 80 Admin Panel](web_80_admin_panel.webp){: width="1200" height="600" }
 
 > It is also possible to discover the `/secret-script.php` endpoint by fuzzing the web application for files, which reveals `messages.html` that links to it. Since there is no authentication mechanism, you can access it directly without logging in.
 {: .prompt-tip }
