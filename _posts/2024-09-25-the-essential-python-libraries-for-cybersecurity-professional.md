@@ -1,5 +1,5 @@
 ---
-title: "The essential Python Libraries for Cybersecurity Professional"
+title: "The Essential Python Libraries for Cybersecurity Professional"
 description: This blog will provide you with a list of essential Python libraries used for penetration testing and bug hunting.
 author: cyberthirty
 categories: [Programming]
