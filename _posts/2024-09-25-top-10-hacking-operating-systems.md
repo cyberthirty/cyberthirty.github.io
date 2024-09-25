@@ -7,9 +7,8 @@ tags: [hacking, bug hunting]
 render_with_liquid: false
 image:
   path: https://imgur.com/Zhh5vUf.png
-  alt: Python image
+  alt: kali linux
 ---
-
 
 ## Introduction
 In the CyberSpace , the choice of the operating system (OS) is crucial for ethical hacking, penetration testing, and security research. In this comprehensive guide, I'll explore the top 10 hacking operating systems, highlighting their most important features.
