@@ -10,7 +10,10 @@ image:
   alt: Browser Extensions for Ethical Hackers
 ---
 
-As we dive into 2024, this curated list of the top 28 browser extensions for pentesters and bug bounty hunters will equip you with essential utilities to streamline your security assessments. From automated vulnerability scanners to session management tools, these extensions are designed to help you uncover and exploit vulnerabilities more effectively. Whether you’re a seasoned professional or just starting your journey in cybersecurity, these tools will empower you to enhance your testing capabilities and maximize your bug bounty reward
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-%23000000?logo=tryhackme&logoColor=white&style=for-the-badge)](https://tryhackme.com/p/cyber30)
+[![Hack The Box](https://img.shields.io/badge/HackTheBox-%23000000?logo=hackthebox&logoColor=white&style=for-the-badge)](https://app.hackthebox.com/profile/1751803)
+
+In this blog we will dive into this curated list of the top 28 browser extensions for pentesters and bug bounty hunters will equip you with essential utilities to streamline your security assessments. From automated vulnerability scanners to session management tools, these extensions are designed to help you uncover and exploit vulnerabilities more effectively. Whether you’re a seasoned professional or just starting your journey in cybersecurity, these tools will empower you to enhance your testing capabilities and maximize your bug bounty reward
 
 ### 1. FoxyProxy Standard
 FoxyProxy is an advanced proxy management tool that replaces Firefox's limited proxy capabilities. It automates the process of editing Firefox's connection settings, making setup with Burp Suite a one-click operation.
