@@ -6,20 +6,11 @@ order: 4
 
 ![Cyberthirty](/common/cyberthirty.webp)
 
-<p align="left">
-  <a href="https://tryhackme.com/p/cyber30" target="_blank" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/TryHackMe-%23000000?logo=tryhackme&logoColor=white&style=for-the-badge" alt="TryHackMe"/>
-  </a>
-  <a href="https://app.hackthebox.com/profile/1751803" target="_blank" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/HackTheBox-%23000000?logo=hackthebox&logoColor=white&style=for-the-badge" alt="Hack The Box"/>
-  </a>
-  <a href="https://www.coursera.org/learner/lucky-ngabuh/" target="_blank" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Coursera-%23000000?logo=coursera&logoColor=white&style=for-the-badge" alt="Coursera"/>
-  </a>
-  <a href="https://www.credly.com/users/lucky-ngabuh" target="_blank" style="text-decoration:none;">
-    <img src="https://img.shields.io/badge/Credly-%23FF6F61?logo=credly&logoColor=white&style=for-the-badge" alt="Credly"/>
-  </a>
-</p>
+
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-%23000000?logo=tryhackme&logoColor=white&style=for-the-badge)](https://tryhackme.com/p/cyber30)
+[![Hack The Box](https://img.shields.io/badge/HackTheBox-%23000000?logo=hackthebox&logoColor=white&style=for-the-badge)](https://app.hackthebox.com/profile/1751803)
+[![Coursera](https://img.shields.io/badge/Coursera-%23000000?logo=coursera&logoColor=white&style=for-the-badge)](https://www.coursera.org/learner/lucky-ngabuh)
+[![Credly](https://img.shields.io/badge/Credly-%23FF6F61?logo=credly&logoColor=white&style=for-the-badge)](https://www.credly.com/users/lucky-ngabuh) 
 
 **Lucky Ngabuh**, known as **Cyberthirty**, is a programmer, developer, hacker, and author of the book *Pentesting Workground*, a practical guide for aspiring penetration testers. He worked as an IT Technician at Ponde Inno Tech Solutions from 2018 to 2021.
 
