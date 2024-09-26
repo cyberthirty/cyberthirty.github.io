@@ -10,6 +10,9 @@ image:
   alt: kali linux
 ---
 
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-%23000000?logo=tryhackme&logoColor=white&style=for-the-badge)](https://tryhackme.com/p/cyber30)
+[![Hack The Box](https://img.shields.io/badge/HackTheBox-%23000000?logo=hackthebox&logoColor=white&style=for-the-badge)](https://app.hackthebox.com/profile/1751803)
+
 ## Introduction
 What is hacking operating system? A hacking operating system is a specialized operating system designed for security professionals, ethical hackers, and penetration testers. This blog explores the top 10 hacking operating systems for 2024, each designed to equip you with the capabilities needed to effectively identify and mitigate security threats. From powerful distributions like Kali Linux to innovative newcomers, we’ll delve into what makes each OS a must-have for your hacking toolkit.
 
